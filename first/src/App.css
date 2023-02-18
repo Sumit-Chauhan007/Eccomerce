@@ -1,0 +1,504 @@
+
+
+        .carousel-inner{
+        
+            height: 420px;
+        }
+       
+     
+        
+        .anchor:hover{
+            color:rgb(247, 68, 78)!important;
+            
+            background: transparent!important;
+            outline: 2px solid rgb(247, 68, 78)!important;
+            transition: 300ms;
+        }
+        .anchch:hover{
+            color:black!important;
+            background: transparent!important;
+            outline: 2px solid black!important;
+            transition: 300ms;
+            
+        }
+      .card:hover .ancho{
+        margin-top: 0px!important;
+        transition: 300ms;
+      }
+    .navbar a , .unanchor{
+      color:black;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 700!important;
+      text-align: center;
+      font-family: Montserrat;
+      margin-left: 0px;
+      
+
+    }
+   .form-control:focus{
+    font-weight: 600!important;
+    
+   }
+  .navbar  i{
+    color:rgba(0,0,0,0.6);
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 13px;
+ font-size: 14px;
+    
+
+
+  }
+.navbar .navbar-nav .nav-item .nav-link.active{
+  color: rgb(247, 68, 78);
+}
+.namefilter:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+ 
+  .navbar .form-control{
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .navbar .form-control:focus{
+    box-shadow: 0px  0px  4px 4px rgba(0,0,0,0.3)!important;
+    outline: rgb(247, 68, 78)!important;
+    border: none;
+  }
+
+    .navbar a:focus{
+      color:black;
+      cursor: pointer;
+    }
+
+    
+      .nav-link:hover{
+          color: rgb(247, 68, 78)!important;
+          transition: 500ms;
+      }
+
+      .dot:active{
+          background-color:rgb(247, 68, 78);
+          transform: scale(1.5,1.5)!important;
+      }
+    
+      .Why::after{
+          content: "";
+          display: block;
+          width: 80px;
+          height: 6px;
+          background: rgb(247, 68, 78);
+          margin-left:180px;
+          margin-top: 15px;
+         
+      }
+      .our::after{
+          content: "";
+          display: block;
+          width: 80px;
+          height: 6px;
+          background: rgb(247, 68, 78);
+          margin-left:130px;
+          margin-top: 15px;
+         
+      }
+      .review::after{
+          content: "";
+          display: block;
+          position: relative;
+          width: 100px;
+          height: 6px;
+          background: rgb(247, 68, 78);
+          margin-left:680px;
+          margin-top: 15px;
+         
+      }
+      .shopp:hover{
+          background:transparent!important;
+          border: 1px solid;
+          border-color:rgb(247, 68, 78)!important ;
+          color: rgb(247, 68, 78)!important ;
+          transition: 300ms;
+      }
+   .ab:hover .imgprop{
+      transform: scale(1.2,1.2);
+      transition: 300ms;
+   }
+   .place::placeholder{
+color: black;
+   }
+   
+   
+.carousel-indicators {
+    position: absolute;
+    margin-left: 730px!important;
+    list-style: none;
+    
+    
+    width: 200px;
+    align-items: center;
+     
+  }
+ 
+  
+  .carousel-indicators li {
+    width: 12px!important;
+    height: 12px!important;
+    opacity: 1!important;
+  
+    border-radius: 100%;
+    background-color: #dcebf5!important ;
+ 
+  }
+ .aimagea , .bimageb , .cimagec{
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  position: absolute;
+ 
+ }
+ .aimagea {
+  animation: colorchangea 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+ }
+ .bimageb{
+  animation: colorchangeb 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+ }
+ .cimagec{
+  animation: colorchangec 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+ }
+
+  @keyframes colorchangea {
+    0% {
+      background: #ff0000;
+    }
+    14% {
+      background: #ffa500;
+    }
+    28% {
+      background: #ffff00;
+    }
+    42% {
+      background: #00ff9d;
+    }
+    56% {
+      background: #0000ff;
+    }
+    70% {
+      background: #4b0082;
+    }
+    84% {
+      background: #ee82ee;
+    }
+    100% {
+      background: #ff0000;
+    }
+    
+  }
+  @keyframes colorchangeb {
+    0% {
+      background: #ffff00;
+    }
+    14% {
+      background: #ee82ee;
+    }
+    28% {
+      background: #ffa500;
+    }
+    42% {
+      background: #ff0000;
+    }
+    56% {
+      background: #0000ff;
+    }
+    70% {
+      background: #4b0082;
+    }
+    84% {
+      background: #00ff8c;
+    }
+    100% {
+      background:  #ffff00;
+    }
+    
+  }
+  @keyframes colorchangec {
+    0% {
+      background: #ffa500;
+    }
+    14% {
+      background: #00f784;
+    }
+    28% {
+      background: #ffff00;
+    }
+    42% {
+      background: #ff0000;
+    }
+    56% {
+      background: #0000ff;
+    }
+    70% {
+      background: #4b0082;
+    }
+    84% {
+      background: #ee82ee;
+    }
+    100% {
+      background:  #ffa500;
+    }
+    
+  }
+  
+  
+  
+  .carousel-indicators .active {
+    background-color: rgb(247, 68, 78)!important;
+    width: 20px!important;
+    height: 20px!important;
+  }
+
+  #carouselExampleControls button{
+    background-color: rgb(247, 68, 78)!important;
+    border-radius:100% ;
+    height: 50px;
+    width: 50px;
+    opacity: 1!important;
+    margin-top: 80px;
+    
+  }
+  #carouselExampleControls button:hover{
+    background-color: black!important;
+    transition: 400ms;
+  }
+  .carousel-control-prev{
+    margin-left: 200px;
+  }
+  .carousel-control-next{
+    margin-right:200px;
+  }
+  .footer a{
+   color: rgb(34,34,34);
+    
+  }
+  .footer .lists a{
+    text-decoration: none!important;
+    margin-left: -30px;
+    line-height: 1.8;
+    
+  }
+  .nav-item:hover .dropdown-menu  {
+    display: block;
+    background: white;
+    opacity: 1;
+    
+    }
+   
+    .bicon{
+      height: 40px;
+      width: 40px;
+     margin-left:20px;
+     
+     
+    }
+    .bicon:hover{
+      transform: scale(1.3,1.3);
+      transition: 300ms;
+      
+    }
+
+    .span{
+      position: relative;
+      background-color: rgb(247, 68, 78);
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      padding: 0 3px;
+      font-size: 10px;
+
+    }
+
+    .cartitem{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 20px;
+      margin-bottom: 20px;
+    
+    }
+    .proceed:hover{
+      background-color:rgb(212, 59, 70)!important ;
+    }
+    .cartItemImg{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+
+    }
+    .cartItemDetail{
+      display: flex;
+      flex: 1;
+        padding: 0 20px;
+        flex-direction: column;
+        font-weight: normal;
+    }
+
+    .reactbutton:hover{
+      background-color: rgba(0,0,0,0.3)!important;
+      color: rgb(247, 68, 78)!important;
+      
+    transition: 350ms;
+    }
+    .summary{
+      width: 30%;
+    }
+    .home{
+      display: flex;
+     
+    }
+    .productContainer{
+      display: flex;
+      width: 78%;
+      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+    }
+    
+    .filters{
+     
+      border-left: 0.5px solid rgba(0,0,0,0.1);
+      min-height: 518px;
+      color:black;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      margin-bottom: 10px;
+       
+    }
+    .filters  span{
+      padding-bottom: 20px;
+    }
+    .title{
+      font-size: 30px;
+    }
+    
+    .profileModal:hover {
+      box-shadow: 0px 0px 5px 4px rgba(247, 68, 78,0.5)!important;
+      
+      transition: 300ms;
+    }
+
+
+    
+    .boxgooglespan {
+      overflow: hidden;
+      text-align: center;
+  }
+  .boxgooglespan:before,
+  .boxgooglespan:after {
+      background-color: rgb(0, 0, 0,0.7);
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+  }
+  .boxgooglespan:before {
+      right: 0.5em;
+      margin-left: -50%;
+      margin-top: -2px;
+    }
+    .boxgooglespan:after {
+      left: 0.5em;
+      margin-right: -50%;
+      margin-top: -2px;
+
+  }
+  .svgwaves{
+    position: absolute;
+      width:1350px;
+      margin-top: 0px;
+      margin-left: -700px;
+      transform: rotate(-90deg);
+  }
+    
+  @media (max-width: 991px) {
+    .shopnowimage{
+      margin-left:70px !important;
+    }
+  }
+
+  .page-item.active .page-link  {
+    background-color: rgba(247, 68, 78);
+    color: white  ;
+    border: 1px solid rgba(247, 68, 78)
+  }
+  .pagination .page-link{
+    color: black  ;
+    
+  }
+
+  .contactForm ::placeholder{
+    color: rgb(128, 128, 128,0.5)!important;
+    
+
+  }
+  .contactus{
+    height: 50px;
+    border: none!important;
+    line-height: 50%;
+    line-height: 50%;
+  }
+  .contactlabel{
+    font-size: 12px;
+    font-weight: 650;
+    margin-top: 20px;
+   margin-bottom: 15px;
+    text-transform: uppercase;  
+  }
+  .contactSubmit:hover{
+  background-color: rgb(69, 95, 27)!important;
+
+  }
+  
+  @media (max-width:992px) {
+    .farm{
+      visibility: hidden!important;
+   }
+   .footer{
+    max-width: 100%!important;
+    overflow:hidden;
+   }
+   .logologo{
+    width: 50px!important;
+    height: 40px!important;
+   }
+   .network{
+    margin: 0px  auto !important;;
+   }
+   .dataadd{}
+    
+  }
+  @media (min-width:991px ) and (max-width:1200px) {
+    .farm{
+      width: 150px;
+      }
+    
+    
+  }
+
+ 
