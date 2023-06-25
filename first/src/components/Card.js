@@ -39,7 +39,7 @@ const Card = ({ prod }) => {
             style={{ height: "340px", justifyContent: "center",}}
           >
             <img
-              src={prod.image}
+             src={'/images/' + prod.image}
               alt=""
               className="imgprop"
               style={{

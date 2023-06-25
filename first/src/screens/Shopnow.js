@@ -58,14 +58,22 @@ const SingleProduct = ({ match }) => {
     };
     const [product,setProduct] =  useState([]);
     const { id } = useParams();
+    console.log(id);
     useEffect(()=>{
       const fetchproducts = async ()=>{
         
-        const { data } =await axios.get(`/api/products/${id}`);
-        setProduct(data);
+        try {
+          const response = await axios.get(`http://127.0.0.1:8000/api/auth/ReactApiGetProducts/${id}`);
+          setProduct(response.data.singleData);
+         
+        } catch (error) {
+          console.error('Error fetching product:', error);
+        }
       };
       fetchproducts();
     },[id])
+    console.log('kueuchs'+product.name);
+    
   const {
     state: { cart },
     dispatch,
@@ -79,7 +87,7 @@ const SingleProduct = ({ match }) => {
         <div className="row">
           <div className="col-md-6"  >
             <div className="single-image">
-              <img src={product.image} alt={product.name} style={{width:'200px',margin:'40px 0 0 200px'}} className="shopnowimage" />
+              <img src={'/images/' + product.image} alt={product.name} style={{width:'200px',margin:'40px 0 0 200px'}} className="shopnowimage" />
             </div>
           </div>
           <div className="col-md-6">

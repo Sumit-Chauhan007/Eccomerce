@@ -6,14 +6,21 @@ import { auth } from "../firebase";
 
 const Cart = createContext();
 const Context = ({ children }) => {
-  const [data,setData] =  useState([]);
-  useEffect(()=>{
-    const fetchproducts = async ()=>{
-      const { data } =await axios.get("/api/products");
-      setData(data);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get("http://127.0.0.1:8000/api/auth/ReactApiGetProducts");
+        setData(response.data.data); 
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setData([]);
+      }
     };
-    fetchproducts();
-  },[])
+
+    fetchProducts();
+  }, []);
   const [user,setUser] = useState(null);
   const [alert, setAlert] = useState({
     open: false,

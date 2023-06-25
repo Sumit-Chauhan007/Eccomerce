@@ -82,7 +82,7 @@ const Cart = () => {
               <ListGroup.Item key={prod._id} style={{border:'0.5px solid rgba(0,0,0,0.1)',borderRadius:'10px',marginTop:'5px'}}>
                 <Row>
                   <Col md={2}>
-                    <Image src={prod.image} alt={prod.name} fluid rounded style={{height:'100px'}} />
+                    <Image src={'/images/' + prod.image}  alt={prod.name} fluid rounded style={{height:'100px'}} />
                   </Col>
                   <Col md={3}>
                    <Link to={`/Shopnow/${prod._id}`} style={{textDecoration:'none',color:'black'}}><span>{prod.name}</span></Link> 

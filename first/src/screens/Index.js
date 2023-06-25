@@ -12,13 +12,22 @@ import Pagination from "../components/Pagination";
 
 const Home = () => {
   const [data, setData] = useState([]);
-  useEffect(() => {
-    const fetchproducts = async () => {
-      const { data } = await axios.get("/api/products");
-      setData(data);
+
+    useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get("http://127.0.0.1:8000/api/auth/ReactApiGetProducts");
+        setData(response.data.data); // Access the nested array using response.data.data
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setData([]); // Set an empty array if there's an error to avoid "data.map is not a function" error
+      }
     };
-    fetchproducts();
+
+    fetchProducts();
   }, []);
+  console.log(data);
+
   const [userData, setUserData] = useState({
     email: "",
   });
@@ -307,9 +316,9 @@ const Home = () => {
             </div>
           ) : (
             <div className="row justify-content-center">
-              {data.map((prod) => {
-                return <Card prod={prod} key={prod._id} />;
-              })}
+                {data.map((prod) => {
+                  return <Card prod={prod} key={prod._id} />;
+                })}
             </div>
           )}
         </section>

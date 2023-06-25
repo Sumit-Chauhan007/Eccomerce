@@ -13,8 +13,8 @@ const Nav = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchproducts = async () => {
-      const { data } = await axios.get("/api/products");
-      setData(data);
+      const response = await axios.get(`http://127.0.0.1:8000/api/auth/ReactApiGetProducts`);
+      setData(response.data.data);
     };
     fetchproducts();
   }, []);
@@ -191,7 +191,7 @@ const Nav = () => {
                 {cart.map((prod) => (
                   <span className="cartitem" Key={prod._id}>
                     <img
-                      src={prod.image}
+                      src={'/images/' + prod.image} 
                       className="cartItemImg"
                       alt={prod.name}
                     />
